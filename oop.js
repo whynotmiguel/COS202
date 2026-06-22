@@ -22,7 +22,7 @@ class Animal{
 
 
     makeSound(){
-        console.log('The animal makes a generic sound.')
+        console.log(`${this.name} makes a generic sound.`)
     }
 }
 
@@ -40,6 +40,7 @@ class Cat extends Animal{
 
 const animal1 = new Dog('Rex')
 const animal2 = new Cat('Felix')
-
+const animal3 = new Animal('Generic')
 console.log(animal1.makeSound())
 console.log(animal2.makeSound())
+console.log(animal3.makeSound())
